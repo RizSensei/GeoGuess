@@ -386,6 +386,8 @@ h1 em {
 }
 
 .photo-placeholder {
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -396,6 +398,10 @@ h1 em {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 9px;
   font-style: italic;
+}
+
+.street-view-image {
+  object-fit: cover;
 }
 
 .location-label {
@@ -412,6 +418,12 @@ h1 em {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 16px;
   font-style: italic;
+}
+
+.photo-credit {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 8px;
 }
 
 .answers {
@@ -440,6 +452,18 @@ h1 em {
 
 .answer-button:hover {
   background: #e8ddc5;
+}
+
+.answer-button.answer-correct {
+  border-color: #145337;
+  background: #cfe6d3;
+  box-shadow: 4px 5px 0 #145337;
+}
+
+.answer-button.answer-wrong {
+  border-color: #a6402d;
+  background: #f0c9be;
+  box-shadow: 4px 5px 0 #a6402d;
 }
 
 .answer-number {
