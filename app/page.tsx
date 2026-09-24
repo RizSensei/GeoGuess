@@ -1,4 +1,4 @@
-import Link from "next/link";
+import GoogleButtons from "./components/GoogleButtons";
 
 export default function Home() {
   return (
@@ -7,7 +7,6 @@ export default function Home() {
         <a className="wordmark" href="#top" aria-label="GeoGuess home">
           GeoGuess
         </a>
-        <span className="edition">Field atlas no. 1</span>
       </header>
 
       <section className="hero" id="top" aria-labelledby="hero-title">
@@ -24,10 +23,7 @@ export default function Home() {
             One street photo. Four cities. Pick right to keep your streak alive
             - one miss and the journey ends.
           </p>
-          <Link className="google-button" href="/start-journey">
-            <span className="google-mark" aria-hidden="true">G</span>
-            <span>Sign in with Google</span>
-          </Link>
+          <GoogleButtons />
         </div>
 
         <div className="postcard" aria-label="Unknown location postcard">
