@@ -120,6 +120,8 @@ http://localhost:3000/api/auth/callback/google
 
 Generate a strong `NEXTAUTH_SECRET` for anything beyond local development. Never commit `.env` or expose the Google client secret.
 
+For the complete Google Cloud setup, callback URL configuration, production guidance, and troubleshooting, see [GOOGLE-OAUTH.md](./GOOGLE-OAUTH.md).
+
 ## Development
 
 Start the development server:
