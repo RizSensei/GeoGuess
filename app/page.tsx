@@ -1,4 +1,4 @@
-import GoogleButtons from "./components/GoogleButtons";
+import HomeAction from "./components/HomeAction";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
             One street photo. Four cities. Pick right to keep your streak alive
             - one miss and the journey ends.
           </p>
-          <GoogleButtons />
+          <HomeAction />
         </div>
 
         <div className="postcard" aria-label="Unknown location postcard">

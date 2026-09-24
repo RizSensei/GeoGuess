@@ -1,5 +1,6 @@
 import Link from "next/link";
 import AtlasHeader from "../components/AtlasHeader";
+import GoogleButtons from "../components/GoogleButtons";
 
 type JourneyEndProps = {
   searchParams: Promise<{ city?: string }>;
@@ -19,7 +20,7 @@ export default async function JourneyEnd({ searchParams }: JourneyEndProps) {
         <p className="best-copy">Best: 1</p>
         <div className="end-actions">
           <Link className="primary-button" href="/guess">Play again</Link>
-          <Link className="secondary-button" href="/">Sign out</Link>
+          <GoogleButtons type="signout" className="secondary-button" />
         </div>
       </section>
     </main>

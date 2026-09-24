@@ -1,6 +1,7 @@
 "use client";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
+import Link from "next/link";
 import GoogleButtons from "./GoogleButtons";
 
 export default function AtlasHeader() {
@@ -9,9 +10,9 @@ export default function AtlasHeader() {
   return (
     <header className="atlas-header">
       <div className="atlas-brand">
-        <a className="wordmark" href="/" aria-label="GeoGuess home">
+        <Link className="wordmark" href="/" aria-label="GeoGuess home">
           GeoGuess
-        </a>
+        </Link>
       </div>
       <nav className="account-nav" aria-label="Account navigation">
         {session?.user?.image && (
@@ -24,7 +25,6 @@ export default function AtlasHeader() {
           />
         )}
         <span>{session?.user?.name}</span>
-        <span>BEST 1</span>
         <GoogleButtons type="signout" />
       </nav>
     </header>

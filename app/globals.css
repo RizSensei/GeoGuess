@@ -216,6 +216,66 @@ h1 em {
   font-size: 11px;
 }
 
+.journey-intro {
+  width: min(100%, 330px);
+  margin: 1px 0 21px;
+  padding-top: 14px;
+  border-top: 1px solid rgb(16 38 30 / 18%);
+}
+
+.journey-intro-label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--coral);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 8px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.journey-intro p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.how-to-play-label {
+  margin-top: 17px;
+}
+
+.how-to-play {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.how-to-play li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 8px;
+  border-right: 1px solid rgb(16 38 30 / 16%);
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.35;
+}
+
+.how-to-play li:last-child {
+  border-right: 0;
+}
+
+.how-to-play strong {
+  color: var(--coral);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 8px;
+  letter-spacing: .8px;
+}
+
 .primary-button, .secondary-button {
   min-height: 35px;
   padding: 0 21px;
